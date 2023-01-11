@@ -21,10 +21,22 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I want to be a developer people can rely on</p>
-        <p>
+        <div className={utilStyles.centered}>
+          <p><strong> Web Developer</strong></p>
+        </div>
+        <div className={utilStyles.centered}>
+          <p><strong> Frameworks:</strong></p>
+          <ul>
+            <li><strong> Ruby On Rails </strong></li>
+            <li>React</li>
+            <li>Express</li>
+            <li>Next</li>
+          </ul>
+        </div>
 
-        </p>
+
+
+
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
