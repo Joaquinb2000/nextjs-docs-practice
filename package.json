@@ -6,6 +6,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": ">=7.0.0 <8.0.0",
+    "@emotion/react": "^11.10.5",
+    "@mantine/core": "^5.10.1",
+    "@mantine/hooks": "^5.10.1",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
     "next": "latest",

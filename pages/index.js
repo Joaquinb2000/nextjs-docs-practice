@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import Demo from '../components/demo'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -16,7 +17,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout sx={(theme) =>({ backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.blue[0]})}home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -53,6 +54,9 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+            <Demo/>
       </section>
     </Layout>
   )
